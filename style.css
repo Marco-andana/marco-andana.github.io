@@ -266,6 +266,7 @@ nav {
 
 .projects-title {
     padding-top: 40px;
+    font-size: var(--lg-title-font-size);
 }
 
 .card-container {
@@ -331,16 +332,76 @@ nav {
     box-shadow: 0 5px 18px rgba(33, 134, 235, 0.4);
 }
 
+.contact-title {
+    text-align: center;
+    font-size: var(--lg-title-font-size);
+    background-color: var(--white-color);
+}
+
+.contact-container {
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-around;
+    height: 45vh;
+}
+
+.last-word {
+    margin: 50px;
+}
+
+i {
+    width: 20px;
+    height: 20px;
+    font-size: 50px;
+    margin: 30px 30px;
+    color: #181D31;
+}
+
+.fa-github:hover {
+    color: #000;
+    transform: translateY(-5px);
+}
+
+.fa-instagram:hover {
+    transform: translateY(-5px);
+}
+
+.fa-codepen:hover {
+    transform: translateY(-5px);
+}
+
+input,textarea {
+    width: 35vw;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.copyright {
+    text-align: center;
+    background-color: rgb(30, 29, 29);
+    color: var(--white-color);
+    padding: 5px;
+}
+
 
 @media screen and (max-width: 576px) {
     .menu-toggle {
         display: flex;
         left: 90px;
         top: 3px;
+        z-index: 999;
+        position: relative;
+    }
+
+    .menu-toggle > input {
+        position: absolute;
+        margin-top: -5px;
+        margin-left: -4px;
     }
 
     nav {
         width: 100vw;
+        z-index: 99;
     }
 
     nav ul {
@@ -351,10 +412,11 @@ nav {
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
-        background-color: #434242;
+        background-color: var(--dark-blue-color);
         transform: translateX(100%);
         transition: all 1s;
         opacity: 0;
+        
     }
 
     .nav-logo {
@@ -474,6 +536,34 @@ nav {
         width: 120px;
         border: 0px;
         margin-top: 10px;
+    }
+
+    /* END OF PROJECT CONTAINER */
+
+    /* START OF CONTACT CONTAINER */
+
+    .contact-title {
+        font-size: calc(12vw - 1em);
+    }
+
+    .contact-container{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-logo {
+        text-align: center;
+    }
+
+    form {
+        width: 100vw;
+        height: 80vh;
+    }
+
+    input,label,textarea {
+        width: 90vw;
+        margin: 9px 15px;
     }
 
 }
