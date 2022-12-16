@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marco Personal Portofolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Oswald&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&family=Rubik&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,9 +16,9 @@
             <h3 class="nav-logo">Marco Andana</h3>
             <ul class="nav-list">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Tech Stack</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li><a href="#b">Tech Stack</a></li>
+                <li><a href="#c">Projects</a></li>
+                <li><a href="#d">Contact Me</a></li>
             </ul>
             <div class="menu-toggle">
                 <input type="checkbox"/> 
@@ -27,7 +28,7 @@
             </div>
         </nav>
         <div class="hero-container">
-            <div class="hero-info">
+            <div data-aos="fade-up" data-aos-duration="1500" class="hero-info">
             <div class="hero-title">
                 <h2>Hi, I'am Marco Andana</h2>
                 <h1>Front End Web Developer.</h1>
@@ -38,7 +39,8 @@
             <button class="contact-btn" onclick="window.location.href ='#';">Contact Me</button>
         </div>
         <div class="picture-container">
-        <div class="picture">
+        <div data-aos="fade-up" data-aos-duration="1500"class="picture">
+           <a href="https://www.youtube.com/watch?v=k-Pi5ZMxHWY&t=1648s" target="_blank"><img src="assets/dev-ed-wave.png"></a>
         </div>
         </div>
         </div>
@@ -48,9 +50,9 @@
     </header>
 
     <main>
-        <div class="ts-container">
-        <h1 class="ts-title">Tech Stack</h1>
-        <div class="tech-logo-container">
+        <div id="b" class="ts-container">
+        <h1 data-aos="fade-up" data-aos-duration="1500" class="ts-title">Tech Stack</h1>
+        <div data-aos="fade-up" data-aos-duration="1500" class="tech-logo-container">
             <img src="assets/html.png" alt="html-logo">
             <img src="assets/css3.png" alt="css-logo">
             <img src="assets/javascript.png" alt="javascript-logo">
@@ -59,8 +61,8 @@
             <img src="assets/vuejs.png" alt="vue-logo">
             <img src="assets/react.png" alt="react-logo">
         </div>
-        <div class="resume-container">
-            <img src="assets/dummy-img.jpg" alt="">
+        <div data-aos="fade-up" data-aos-duration="1500" class="resume-container">
+            <a href="https://codepen.io/marco-andana/full/yLEBYRP" target="_blank"><img src="assets/tech-img.png" alt="card-image"></a>
             <div class="resume-info-container">
             <h1 class="resume-title">i love to make something briliant and modern to my website so it will be extraordinary</h1>
             <p class="resume-p">I usually like to make a colorful website and also website that are interactive. I learn this from some coding learning website like Freecodecamp, codepolitan, dicoding academy, and some of youtube channel like WebProgramingUNPAS and Dea Afrizal.</p>
@@ -70,16 +72,16 @@
 
     </div>
     <div class="projects-container">
-        <h1 class="projects-title">My Projects</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1500" id="c" class="projects-title">My Projects</h1>
         <div class="card-container">
-            <div class="card-main">
+            <div data-aos="fade-up" data-aos-duration="1500" class="card-main">
                 <img src="assets/project-1.png" alt="project-img" />
                 <div class="projects-info">
                 <h1>Shoe Shop Landing Page</h1>
             <a href="https://marco-andana.github.io/Shoe-Shop-Landing-Page/" target="_blank"><button class="card-btn">See Detail</a></button>
             </div>
         </div>
-            <div class="dcard-container">
+            <div data-aos="fade-up" data-aos-duration="1500" class="dcard-container">
             <div class="card2">
                 <img src="assets/project-2.png" alt="project-img" />
                 <div class="projects-info">
@@ -98,14 +100,14 @@
         </div>
     </div>
 <h1 class="contact-title">Contact</h1>
-    <div class="contact-container">
-        <div class="contact-logo">
+    <div id="d" class="contact-container">
+        <div data-aos="fade-up" data-aos-duration="1500" class="contact-logo">
         <a href="https://github.com/Marco-andana" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.instagram.com/marcoandana36/?hl=id" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://codepen.io/your-work/" target="_blank"><i class="fa-brands fa-codepen"></i></a>
         <h1 class="last-word">"Lets Make Project Together!"</h1>
         </div>
-        <form>
+        <form data-aos="fade-up" data-aos-duration="1500">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" placeholder="Your Name"><br>
             <label for="email">Email:</label><br>
@@ -124,6 +126,10 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="https://kit.fontawesome.com/afb5fbdd6d.js" crossorigin="anonymous"></script>
 </body>
 </html>

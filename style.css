@@ -168,6 +168,16 @@ nav {
     box-shadow: 0px 0px 3px 1px #336ff0;
 }
 
+.picture-container {
+    margin: auto;
+}
+
+.picture-container img{
+    width: 850px;
+    height: 700px;
+    margin-top: 60px;
+}
+
 /* END OF HERO INFO */
 
 /* START OF PROFILE PICTURE */
@@ -225,7 +235,7 @@ nav {
 }
 
 .resume-container img {
-    width: 420px;
+    width: 33vw;
     padding-left: var(--padding);
     border-radius: 20px;
 }
@@ -450,11 +460,18 @@ input,textarea {
     }
 
     .picture-container {
-        background-color: rebeccapurple;
         position: absolute;
         width: 20vw;
         height: 20vh;
-        right: 40px;
+        right: 20px;
+    }
+
+    .picture-container img {
+        position: absolute;
+        width: 170px;
+        height: 120px;
+        right: -75px;
+        top: -80px;
     }
 
     .nav-list li {
@@ -483,8 +500,8 @@ input,textarea {
     }
 
     .resume-container img {
-        width: 80vw;
-        height: 80vh;
+        width: 90vw;
+        height: 40vh;
         margin: auto;
         margin-top: 14em;
         padding: 15px 0;
@@ -518,7 +535,7 @@ input,textarea {
         display: block;
         height: 160%;
         width: 100vw;
-        margin-top: 190px;
+        margin-top: 150px;
         text-align: center;
     }
 
